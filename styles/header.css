@@ -1,3 +1,4 @@
+/* Estilização para telas menores */
 header {
     background: #BBBBBB;
     padding: 20px 0;
@@ -8,10 +9,9 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 940px;
+    width: auto;
     margin: 0 auto;
 }
-
 
 .logo {
     display: flex;
@@ -21,14 +21,21 @@ header {
 }
 
 .header-logo {
-    width: 50px;
+    width: 90px;
     margin-right: 10px;
 }
 
+#nome_empresa {
+    display: none;
+}
 
 nav {
     top: 110px;
     right: 0;
+}
+
+nav ul {
+        display: grid;
 }
 
 nav li {
@@ -47,4 +54,24 @@ nav a {
 nav a:hover {
     color: var(--cor-principal);
     text-decoration: underline;
+}
+
+/* Estilização para Tablets (telas médias)    */
+@media screen and (min-width: 480px) {
+    #nome_empresa {
+        display: flex;
+    }    
+}
+
+@media screen and (min-width: 645px) {
+    nav ul {
+        display: inline;
+    }
+    
+}
+/* Estilização para Desktop (telas maiores)   */
+@media screen and (min-width: 1080px) {
+    .caixa {
+        width: 940px;
+    }
 }
