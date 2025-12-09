@@ -1,5 +1,12 @@
 @import url(/styles/header.css);
 @import url(/styles/footer.css);
+@import url(/styles/contato.css);
+@import url(/styles/mapa.css);
+@import url(/styles/principal.css);
+
+
+
+
 
 :root {
     /* cores personalisadas */
