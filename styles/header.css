@@ -1,6 +1,6 @@
 /* Estilização para telas menores */
 header {
-    background: #BBBBBB;
+    background: var(--cor-branco);
     padding: 20px 0;
 }
 
